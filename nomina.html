@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nómina</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="module" src="script/nomina.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/dinero.png" alt="Logo de la empresa" id="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="carros.html">Carros</a></li>
+                <li><a href="nomina.html">Nomina</a></li>
+                <li><a href="perros.html">Perros</a></li>
+                <li><a href="parqueadero.html">Parqueadero</a></li>
+                <li><a href="minijuego.html">Mini Juego</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <video id="video-background" autoplay muted loop>
+        <source src="video/fondo.mp4" type="video/mp4">
+        Tu navegador es tan chimbo que no reproduce este video.
+    </video>
+    <section>
+        <form action=""></form>
+            <label for="salariobase">¿Cuánto es su salario básico mensual?</label>
+            <br>
+            
+            <input id="salariobase" name="salariobase" type="number"></input>
+            <br>
+
+            <label for="diurnas">¿Cuántas horas extras diurnas trabajó?</label>
+            <br>
+
+            <input id="diurnas" name="diurnas" type="number"></input>
+            <br>
+
+            <label for="nocturnas">¿Cuantas horas extra nocturnas trabajo?</label>
+            <br>
+
+            <input id="nocturnas" name="nocturnas" type="number"></input>
+            <br>
+
+            <label for="festivo">¿Cuantas horas extra en un festivo trabajo?</label>
+            <br>
+
+            <input id="festivo" name="festivo" type="number"></input>
+            <br>
+
+            <label for="dominicales">¿Cuantas horas extra dominicales trabajo?</label>
+            <br>
+
+            <input id="dominicales" name="dominicales" type="number"></input>
+            <br>
+
+            <label for="fallas">¿Cuantos dias ha fallado?</label>
+            <br>
+
+            <input id="fallas" name="fallas" type="number"></input>
+            <br>
+
+            <button type="button" id="calculo">Calcular</button>
+        
+        <div id="muestra" class="muestra"></div>    
+    </section>
+    
+    <footer>
+        <p>&copy; Página de consultas 2024</p>
+    </footer>
+</body>
+</html>

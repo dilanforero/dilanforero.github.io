@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alquiler Carros</title>
+    <link rel="stylesheet" href="style/style.css">
+    <script type="module" src="script/carros.js"></script>
+</head>
+<body>
+    <header>
+        <img src="img/carro-logo.jpg" alt="Logo de la pagina" id="logo">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="carros.html">Carros</a></li>
+                <li><a href="nomina.html">Nomina</a></li>
+                <li><a href="perros.html">Perros</a></li>
+                <li><a href="parqueadero.html">Parqueadero</a></li>
+                <li><a href="minijuego.html">Mini Juego</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <video id="video-background" autoplay muted loop>
+        <source src="video/fondo.mp4" type="video/mp4">
+        Tu navegador es tan chimbo que no reproduce este video.
+    </video>
+    <section>
+            <h1>Cálculo para averiguar alquiler de carro</h1>
+
+            <form id="form-alquiler">
+                <label for="modelo">Escriba el modelo de carro de estas opciones:
+                    <option value="bmw">- BMW</option>
+                    <option value="megane">- Megane</option>
+                    <option value="mercedes">- Mercedes</option>
+                    <option value="twingo">- Twingo</option>
+                    <option value="chevrolet">- Chevrolet</option>
+                </label>
+                <input id="modelo" name="modelo" type="text"></input>
+                <br>
+            
+                <label for="dias">Digite la cantidad de días del alquiler:</label>
+                <br>
+                <input id="dias" name="dias" type="number"></input>
+                <br>
+            
+                <label for="seguro">¿Desea usar el seguro? (si/no):</label>
+                <br>
+                <input id="seguro" name="seguro" type="text"></input>
+                <br>
+                <button type="button" id="calcular">Calcular</button>
+            </form>
+            
+            <div id="resultado" class="resultado"></div>
+            
+    </section>
+
+    <footer>
+        <p>&copy; Alquiler Carros 2024</p>
+    </footer>
+</body>
+</html>
